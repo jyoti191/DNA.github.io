@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset ="UTF-8">
+    
+        <meta name ="viewport" content = "width = device-width, initial-scale =1">
+        <link rel ="stylesheet" href = "logindna.css">
+        <title>Log in</title>
+    
+        </head>
+        <body>
+            <div class="nav">
+                <div class="nav-title">
+                    <h1>DNA Fingerprinting</h1>
+                </div>
+            
+            <div class="nav-menu">
+                <ul><li><input name="Name or Query" list="Names/Sequence" placeholder="Name/Query Sequence">
+                <datalist id="Names/Sequence">
+                    <option value="Luck"></option>
+                    <option value="ATGCATGCCCCGGTTAA"></option>
+                    <option value="PRTA"></option>
+                </datalist></li>
+                    <li><a class="active" href= "DNA.html" style="color:#fff; text-decoration:none">Home</a></li>
+                    <li><a class="active" href= "login.html" style="color:#fff; text-decoration:none">Log in</a></li>
+                    <li><a class="active" href= "services1.html" style="color:#fff; text-decoration:none">Services</a></li>
+                    <li><a class="active" href= "aboutdna.html" style ="color:#fff; text-decoration:none"  >About</a></li>
+                </ul>
+            </div>
+            </div>
+        
+            <div class="center">
+                <h1>Log in</h1>
+                <form method="post">
+                    <div class="txt_field">
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+
+                    <div class="txt_field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="pass">Forgot Password?</div>
+                    <input type="submit" value="Login">
+                    
+                </form>
+            </div>
+        </body>

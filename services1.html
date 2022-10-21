@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Services</title>
+        <link rel="stylesheet" type="text/css" href="services.css">
+    
+    <body>
+        <div class="nav">
+            <div class="nav-title">
+                <h1>DNA Fingerprinting</h1>
+            </div>
+        
+        <div class="nav-menu">
+            <ul><li><input name="Name or Query" list="Names/Sequence" placeholder="Name/Query Sequence">
+            <datalist id="Names/Sequence">
+                <option value="Luck"></option>
+                <option value="ATGCATGCCCCGGTTAA"></option>
+                <option value="PRTA"></option>
+            </datalist></li>
+                <li><a class="active" href= "DNA.html" style="color:#fff; text-decoration:none">Home</a></li>
+                <li><a class="active" href= "login.html" style="color:#fff; text-decoration:none">Log in</a></li>
+                <li><a class="active" href= "services1.html" style="color:#fff; text-decoration:none">Services</a></li>
+                <li><a class="active" href= "aboutdna.html" style ="color:#fff; text-decoration:none"  >About</a></li>
+            </ul>
+        </div>
+        </div>
+         <div class="box">
+            <img src="colordna.jpg" class="dna">
+             <h1>Find Who Matches the DNA You Have Collected:</h1>
+            
+              <form>
+                <p>Enter Nucleotide Sequence</p>
+                <input type="text" name="" placeholder="Enter Sequence" >
+                <pre>
+                         OR 
+
+Upload File -------------> </pre>
+               
+               
+               
+            </form>
+         </div>
+
+         <div class="container">
+         <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+                <div class="popup" id="popup">
+                    <h2>Matched with</h2>
+                    <pre>
+                        
+                        
+Details of person;
+
+Name:                .
+ID:                  .
+Address:             .
+Phone no.:           .
+Designation:         .
+</pre>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+              
+         <script>
+            let popup= document.getElementById("popup");
+           function openPopup(){
+            popup.classList.add("open-popup");
+           } 
+           function closePopup(){
+            popup.classList.remove("open-popup");
+           } 
+        </script>
+    </body>
+    </head>
+</html>
